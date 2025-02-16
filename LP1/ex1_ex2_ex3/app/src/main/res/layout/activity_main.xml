@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input string"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your string"
+        android:inputType="text"
+        android:padding="16dp" />
+
+
+    <Button
+        android:id="@+id/sortButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort String"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Output string"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result will appear here"
+        android:textSize="18sp"
+        android:background="#E0E0E0"
+        android:padding="8dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First number"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/inputTextNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the first number"
+        android:inputType="number"
+        android:padding="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second number"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/inputTextNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the second number"
+        android:inputType="number"
+        android:padding="16dp" />
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check if the numbers are friendly"
+        android:layout_gravity="center" />
+    <TextView
+        android:id="@+id/outputText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result will appear here"
+        android:textSize="18sp"
+        android:background="#E0E0E0"
+        android:padding="8dp" />
+    <EditText
+        android:id="@+id/inputTextNumber3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the number for converting from hexadecimal to decimal"
+        android:inputType="text"
+        android:padding="16dp" />
+    <Button
+        android:id="@+id/hexButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Convert to decimal"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/outputText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result will appear here"
+        android:textSize="18sp"
+        android:background="#E0E0E0"
+        android:padding="8dp" />
+</LinearLayout>
