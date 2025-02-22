@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ex2</string>
+    <string-array name="activity_arrays">
+        <item>Select Mode</item>
+        <item>Alert Mode</item>
+        <item>Relaxation </item>
+        <item>Active</item>
+    </string-array>
+    <string name="activity_prompt">Choose an activity</string>
+
+</resources>

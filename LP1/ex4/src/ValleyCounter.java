@@ -5,7 +5,7 @@ public class ValleyCounter {
         for(char ch : path.toCharArray()){
             if(ch == 'U'){
                 currentLevel++;
-            }else{
+            }else if(ch=='D'){
                 currentLevel--;
             }
             if(currentLevel ==0 && ch =='U'){
