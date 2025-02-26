@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter 2"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet quam ipsum. Praesent arcu tellus, volutpat quis posuere a, aliquam vel urna. Phasellus euismod congue justo, id eleifend ipsum posuere at. Nunc fermentum at eros non tempus. Nullam gravida erat sed leo auctor pharetra. Mauris turpis turpis, posuere vel sapien vitae, accumsan accumsan felis. Duis nulla mauris, ultrices in placerat a, ultrices nec enim. Mauris congue commodo ante sit amet porttitor. Sed in tincidunt purus. Ut pharetra ex vitae mi commodo, sed aliquet tellus bibendum.
+
+Integer ut placerat nunc, id vestibulum felis. Sed purus ipsum, lacinia vel sollicitudin ut, faucibus at erat. Vivamus aliquam libero nunc, non sodales purus iaculis eu. Nam luctus cursus imperdiet. Cras pretium urna in libero elementum, ut vulputate elit facilisis. Ut hendrerit eu leo nec euismod. Aliquam non lobortis justo. Etiam et eros eget nulla porta laoreet. Quisque in ullamcorper orci. Sed lacinia posuere arcu, at commodo velit dictum id. Pellentesque porta accumsan metus, laoreet dapibus eros euismod nec. Morbi scelerisque elementum odio, eget euismod libero ultricies id. Suspendisse sed felis sit amet felis lobortis tempor. Nunc vitae risus nulla. Nunc et mattis nulla. Duis vitae nisi sollicitudin, hendrerit nibh ultricies, vestibulum massa.
+
+Vestibulum faucibus rutrum tellus, id dapibus massa scelerisque eget. Nulla ut nibh et dui ultricies porta. In non scelerisque ante. Maecenas nulla ante, facilisis vel consequat ut, consectetur eu nulla. Integer eu elementum nulla. Proin feugiat neque eros, at venenatis ipsum iaculis a. Suspendisse viverra ante ut mauris aliquam blandit. Nam placerat tincidunt nunc vel blandit. Morbi vulputate tortor et mauris ornare bibendum...."
+            android:textSize="18sp"
+            android:lineSpacingExtra="5dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
