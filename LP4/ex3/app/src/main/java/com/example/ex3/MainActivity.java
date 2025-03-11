@@ -2,16 +2,17 @@ package com.example.ex3;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Toast;
+import android.widget.Button;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.widget.Button;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final int REQUEST_ADD_CONTACT = 1;
 
     private RecyclerView recyclerView;
     private ContactAdapter contactAdapter;
@@ -35,20 +36,29 @@ public class MainActivity extends AppCompatActivity {
 
         contactAdapter = new ContactAdapter(contactList, this::openContactDetails);
         recyclerView.setAdapter(contactAdapter);
-        addButton = findViewById(R.id.add_button);
-        addButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AddContactActivity.class);
-                startActivityForResult(intent, 1);
-            }
-        });
 
+        addButton = findViewById(R.id.add_button);
+        addButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AddContactActivity.class);
+            startActivityForResult(intent, REQUEST_ADD_CONTACT);
+        });
     }
 
     private void openContactDetails(Contact contact) {
         Intent intent = new Intent(this, ContactDetailsActivity.class);
         intent.putExtra("contact", contact);
         startActivity(intent);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_ADD_CONTACT && resultCode == RESULT_OK && data != null) {
+            Contact newContact = (Contact) data.getSerializableExtra("new_contact");
+            if (newContact != null) {
+                contactList.add(newContact);
+                contactAdapter.notifyItemInserted(contactList.size() - 1);
+            }
+        }
     }
 }

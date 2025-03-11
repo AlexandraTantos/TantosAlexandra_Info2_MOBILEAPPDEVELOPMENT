@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".ContactDetailsActivity">
 
-    <!-- Imaginea contactului -->
     <ImageView
         android:id="@+id/contact_image"
         android:layout_width="150dp"
@@ -17,7 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Numele contactului -->
     <TextView
         android:id="@+id/contact_name"
         android:layout_width="wrap_content"
@@ -31,7 +29,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5" />
 
-    <!-- EditText pentru modificarea numelui -->
     <EditText
         android:id="@+id/edit_contact_name"
         android:layout_width="0dp"
@@ -44,7 +41,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Numarul de telefon al contactului -->
     <TextView
         android:id="@+id/contact_phone"
         android:layout_width="wrap_content"
@@ -57,7 +53,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5" />
 
-    <!-- EditText pentru modificarea numarului de telefon -->
     <EditText
         android:id="@+id/edit_contact_phone"
         android:layout_width="0dp"
@@ -70,7 +65,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Buton pentru a suna -->
     <Button
         android:id="@+id/call_button"
         android:layout_width="wrap_content"
@@ -82,7 +76,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         android:layout_marginTop="16dp" />
 
-    <!-- Buton pentru editare -->
     <Button
         android:id="@+id/edit_button"
         android:layout_width="wrap_content"
