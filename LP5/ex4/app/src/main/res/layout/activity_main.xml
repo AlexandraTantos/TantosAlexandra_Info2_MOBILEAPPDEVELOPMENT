@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#f5f5f5">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Participants"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#211C84"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:paddingTop="20dp" />
+
+    <Button
+        android:id="@+id/sortButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/sort_participants"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:id="@+id/participantListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:background="#ffffff"
+        android:layout_marginBottom="20dp"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/addParticipantButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:backgroundTint="#2196F3"
+        android:text="@string/add_participant"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+
+</LinearLayout>
